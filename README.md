@@ -101,10 +101,11 @@ Open the `pdf_to_video.py` script and adjust the following constants in the "CON
 
 1.  Ensure your virtual environment is activated (`source .venv/bin/activate`).
 2.  Ensure your `OPENAI_API_KEY` is set or available via a `.env` file (if you configured that).
-3.  Place your PDF file in the location specified by `PDF_PATH` (or update `PDF_PATH`).
-4.  Run the script from the project's root directory:
+3.  Place your PDF file in the project's root directory.
+4.  Update line 10 in `pdf_to_video.py` (the `PDF_PATH` variable) to match the name of your PDF file.
+5.  Run the script from the project's root directory:
     ```bash
-    python pdf_to_video.py 
+    python pdf_to_video.py
     ```
     (If `python` defaults to Python 2 on your system, use `python3 pdf_to_video.py`)
 
