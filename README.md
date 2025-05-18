@@ -94,8 +94,9 @@ Open the `pdf_to_video.py` script and adjust the following constants in the "CON
 *   `PAGE_DURATION`: Minimum duration (in seconds) for each page if there's no narration or if narration is very short. Narration time will extend this.
 *   `TRANSITION_SEC`: Duration (in seconds) for fade-in and fade-out transitions.
 *   `VIDEO_WIDTH`: Width of the output video in pixels. Height will be auto-scaled.
-*   `OPENAI_TTS_MODEL`: The OpenAI TTS model to use (e.g., `"tts-1"`, `"tts-1-hd"`).
-*   `OPENAI_TTS_VOICE`: The OpenAI TTS voice to use (e.g., `"alloy"`, `"echo"`, `"fable"`, `"onyx"`, `"nova"`, `"shimmer"`).
+*   `OPENAI_TTS_MODEL`: The OpenAI TTS model to use (e.g., `"tts-1"`, `"tts-1-hd"`, `"gpt-4o-mini-tts"`). The script currently uses `"gpt-4o-mini-tts"`.
+*   `OPENAI_TTS_VOICE`: The OpenAI TTS voice to use (e.g., `"alloy"`, `"echo"`, `"fable"`, `"onyx"`, `"nova"`, `"shimmer"`). This primarily sets the base voice characteristic.
+*   **Voice Instructions (for `gpt-4o-mini-tts` and similar advanced models)**: The script includes an `instructions` parameter within the TTS generation call (e.g., `"Speak in a dramatic and comical voice..."`). This allows for more nuanced control over the delivery style if you are using a model that supports it (like `gpt-4o-mini-tts`) and have an up-to-date `openai` Python library. If you encounter errors related to this parameter, try upgrading your OpenAI library: `pip install --upgrade openai`.
 
 ## Running the Script
 

@@ -7,13 +7,13 @@ from moviepy import ImageClip, AudioFileClip, CompositeAudioClip, concatenate_vi
 from PIL import Image
 
 # --- CONFIGURATION ---
-PDF_PATH        = "My Mama is My Hero.pdf"
+PDF_PATH        = "My Mama is My Hero.pdf" # Add your PDF file path here
 OUTPUT_DIR      = "output_pages"
 VIDEO_FILENAME  = "book_presentation.mp4"
 PAGE_DURATION   = 4     # seconds per page (including narration)
 TRANSITION_SEC  = 1     # fade-in/out seconds
 VIDEO_WIDTH     = 1280  # output width (height auto-scaled)
-OPENAI_TTS_MODEL = "tts-1"       # OpenAI TTS model (e.g., "tts-1", "tts-1-hd")
+OPENAI_TTS_MODEL = "gpt-4o-mini-tts"       # OpenAI TTS model (e.g., "tts-1", "tts-1-hd")
 OPENAI_TTS_VOICE = "shimmer"       # OpenAI TTS voice (e.g., "alloy", "echo", "fable", "onyx", "nova", "shimmer")
 
 # Initialize OpenAI client
